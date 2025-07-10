@@ -27,6 +27,7 @@ Partial Class Form1
         Me.Resultado = New System.Windows.Forms.Label()
         Me.txtNumero1 = New System.Windows.Forms.TextBox()
         Me.txtNumero2 = New System.Windows.Forms.TextBox()
+
         Me.btnSumar = New System.Windows.Forms.Button()
         Me.btnRestar = New System.Windows.Forms.Button()
         Me.btnMultiplicar = New System.Windows.Forms.Button()
@@ -36,6 +37,7 @@ Partial Class Form1
         'Numero1
         '
         Me.Numero1.AutoSize = True
+
         Me.Numero1.Font = New System.Drawing.Font("Times New Roman", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Numero1.Location = New System.Drawing.Point(154, 96)
         Me.Numero1.Name = "Numero1"
@@ -124,6 +126,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+
         Me.Controls.Add(Me.lblResultado)
         Me.Controls.Add(Me.btnMultiplicar)
         Me.Controls.Add(Me.btnRestar)
@@ -149,4 +152,5 @@ Partial Class Form1
     Friend WithEvents btnRestar As Button
     Friend WithEvents btnMultiplicar As Button
     Friend WithEvents lblResultado As Label
+  
 End Class
