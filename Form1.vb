@@ -11,4 +11,24 @@
 
     End Sub
 
+    Private Sub txtNumero1_TextChanged(sender As Object, e As EventArgs) Handles txtNumero1.TextChanged
+
+    End Sub
+
+    Private Sub txtNumero2_TextChanged(sender As Object, e As EventArgs) Handles txtNumero2.TextChanged
+
+    End Sub
+
+    Private Sub btnSumar_Click(sender As Object, e As EventArgs) Handles btnSumar.Click
+
+    End Sub
+
+    Private Sub btnRestar_Click(sender As Object, e As EventArgs) Handles btnRestar.Click
+
+    End Sub
+
+    Private Sub btnMultiplicar_Click(sender As Object, e As EventArgs) Handles btnMultiplicar.Click
+
+    End Sub
+
 End Class
