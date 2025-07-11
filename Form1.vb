@@ -28,7 +28,14 @@
     End Sub
 
     Private Sub btnMultiplicar_Click(sender As Object, e As EventArgs) Handles btnMultiplicar.Click
-
+        Try
+        Dim num1 As Double = Convert.ToDouble(txtNumero1.Text)
+        Dim num2 As Double = Convert.ToDouble(txtNumero2.Text)
+        Dim result As Double = num1 * num2
+        lblResultado.Text = result.ToString()
+    Catch ex As Exception
+        MessageBox.Show("Por favor, ingrese números válidos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+    End Try
     End Sub
 
 End Class
