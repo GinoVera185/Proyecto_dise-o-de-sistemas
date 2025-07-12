@@ -31,7 +31,19 @@
     End Sub
 
     Private Sub btnRestar_Click(sender As Object, e As EventArgs) Handles btnRestar.Click
+        Try
+            Dim num1 As Double = Convert.ToDouble(txtNumero1.Text)
+            Dim num2 As Double = Convert.ToDouble(txtNumero2.Text)
 
+            ' Se realiza la resta en lugar de la suma
+            Dim result As Double = num1 - num2
+
+            lblResultado.Text = result.ToString()
+
+        Catch ex As Exception
+            ' Se usa el mismo mensaje de error que en tu código
+            MessageBox.Show("Tipo de dato incorrecto, por favor ingrese numeros validos.", "Error")
+        End Try
     End Sub
 
     Private Sub btnMultiplicar_Click(sender As Object, e As EventArgs) Handles btnMultiplicar.Click
