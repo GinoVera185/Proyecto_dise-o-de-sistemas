@@ -31,20 +31,7 @@
     End Sub
 
     Private Sub btnRestar_Click(sender As Object, e As EventArgs) Handles btnRestar.Click
-
-    End Sub
-
-    Private Sub btnMultiplicar_Click(sender As Object, e As EventArgs) Handles btnMultiplicar.Click
-        Try
-        Dim num1 As Double = Convert.ToDouble(txtNumero1.Text)
-        Dim num2 As Double = Convert.ToDouble(txtNumero2.Text)
-        Dim result As Double = num1 * num2
-        lblResultado.Text = result.ToString()
-    Catch ex As Exception
-        MessageBox.Show("Por favor, ingrese números válidos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-    End Try
-
-     Private Sub btnResta_Click(sender As Object, e As EventArgs) Handles btnResta.Click
+        Private Sub btnResta_Click(sender As Object, e As EventArgs) Handles btnResta.Click
     Try
         Dim num1 As Double = Convert.ToDouble(txtNumero1.Text)
         Dim num2 As Double = Convert.ToDouble(txtNumero2.Text)
@@ -57,6 +44,18 @@
     Catch ex As Exception
         ' Se usa el mismo mensaje de error que en tu código
         MessageBox.Show("Tipo de dato incorrecto, por favor ingrese numeros validos.", "Error")
+    End Try
+
+    End Sub
+
+    Private Sub btnMultiplicar_Click(sender As Object, e As EventArgs) Handles btnMultiplicar.Click
+        Try
+        Dim num1 As Double = Convert.ToDouble(txtNumero1.Text)
+        Dim num2 As Double = Convert.ToDouble(txtNumero2.Text)
+        Dim result As Double = num1 * num2
+        lblResultado.Text = result.ToString()
+    Catch ex As Exception
+        MessageBox.Show("Por favor, ingrese números válidos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
     End Try
     End Sub
 
