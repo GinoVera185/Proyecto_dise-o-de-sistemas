@@ -57,4 +57,14 @@
     End Try
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Try
+            Dim num1 As Double = Convert.ToDouble(txtNumero1.Text)
+            Dim num2 As Double = Convert.ToDouble(txtNumero2.Text)
+            Dim result As Double = num1 / num2
+            lblResultado.Text = result.ToString()
+        Catch ex As Exception
+            MessageBox.Show("Tipo de dato incorrecto, por favor ingrese numeros validos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
 End Class
