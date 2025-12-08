@@ -1,9 +1,9 @@
 Trabajo Práctico Experimental: GitHub con visual Basic
 
 Integrantes:
-Erick Aguilar
-Gino Vera
-Andres Vallejo
+Erick Aguilar,
+Gino Vera,
+Andres Vallejo,
 
 Indicaciones:
 
